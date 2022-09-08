@@ -1,10 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using WebAppDETAug2022.Data;
+using WebAppDETAug2022.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//Add services dependency of IHello
+builder.Services.AddSingleton<IHello, Hello1>();
 builder.Services.AddDbContext<WebAppDETAug2022Context>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("WebAppDETAug2022Context") ?? throw new InvalidOperationException("Connection string 'WebAppDETAug2022Context' not found.")));
 
@@ -25,6 +30,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
+app.MapControllerRoute(
+   name: "default",
+   pattern: "{controller=Event}/{action=Index}/{id}");
 
 app.Run();
