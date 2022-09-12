@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVCDemo.Filters;
 using MVCDemo.Models;
 using System.Diagnostics;
 
@@ -20,7 +21,25 @@ namespace MVCDemo.Controllers
             ViewBag.Contact = contact;
             return View();
         }
+        
+        public string CSRetest()
+        {
+            return "csharp test is today @5pm; get prepared";
+        }
+        [ResponseCache(Duration = 10)]
+        [MyLog]
 
+        public string Retest()
+        {
+            return DateTime.Now.ToString();
+        }
+        [MyLog]
+        public string retests()
+
+        {
+            return "c#=12-sep";
+
+        }
         public IActionResult Index()
         {
             return View();
@@ -37,4 +56,5 @@ namespace MVCDemo.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
+
 }
