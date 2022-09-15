@@ -17,9 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BANK", "BANK\BANK.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTest", "BankTest\BankTest.csproj", "{A4388D84-5BA9-4861-AC0A-746589F688C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstUnitTests", "MyFirstUnitTests\MyFirstUnitTests.csproj", "{0240668D-D4BB-481F-BDA4-6C5ADE8238B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstUnitTests", "MyFirstUnitTests\MyFirstUnitTests.csproj", "{0240668D-D4BB-481F-BDA4-6C5ADE8238B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1_ClassLibPizza", "TestProject1_ClassLibPizza\TestProject1_ClassLibPizza.csproj", "{69592511-EBF3-4C21-A305-A62507EE3B24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1_ClassLibPizza", "TestProject1_ClassLibPizza\TestProject1_ClassLibPizza.csproj", "{69592511-EBF3-4C21-A305-A62507EE3B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDemo", "TDDemo\TDDemo.csproj", "{51342871-A7C6-4EAC-9973-BCB73CB870A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryAPI", "LibraryAPI\LibraryAPI.csproj", "{7E366C3D-1F37-4F9A-9A17-E98B12CA5E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{1398A0EE-63B6-4A09-A25C-528FD29281E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{69592511-EBF3-4C21-A305-A62507EE3B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69592511-EBF3-4C21-A305-A62507EE3B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69592511-EBF3-4C21-A305-A62507EE3B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51342871-A7C6-4EAC-9973-BCB73CB870A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51342871-A7C6-4EAC-9973-BCB73CB870A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51342871-A7C6-4EAC-9973-BCB73CB870A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51342871-A7C6-4EAC-9973-BCB73CB870A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E366C3D-1F37-4F9A-9A17-E98B12CA5E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E366C3D-1F37-4F9A-9A17-E98B12CA5E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E366C3D-1F37-4F9A-9A17-E98B12CA5E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E366C3D-1F37-4F9A-9A17-E98B12CA5E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1398A0EE-63B6-4A09-A25C-528FD29281E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1398A0EE-63B6-4A09-A25C-528FD29281E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1398A0EE-63B6-4A09-A25C-528FD29281E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1398A0EE-63B6-4A09-A25C-528FD29281E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
